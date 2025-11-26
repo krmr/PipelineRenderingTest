@@ -19,6 +19,8 @@ jobs:
       
     steps:
     - uses: actions/checkout@v4
+    - name: Install GLFW
+      run: sudo apt install -y libglfw3
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
